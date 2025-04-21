@@ -2,8 +2,47 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/asciid');
 
+body {
+    --custom-chatbar: separated !important; /* off: default chatbar, aligned: chatbar aligned with the user panel, separated: chatbar separated from chat */
+    --chatbar-height: 56px !important; /* height of the chatbar (52px by default, 47px recommended for aligned, 56px recommended for separated) */
+}
+
 .visual-refresh {
     .bg__960e4 {
         background: var(--bg-base-primary);
+    }
+
+    #vc-spotify-progress-bar {
+        margin: 8px 0 0 0;
+    }
+    .vc-spotify-button-row {
+        margin-top: 8px;
+    }
+    #app-mount #vc-spotify-progress-bar .bar_a562c8 {
+        height: 22px !important;
+        top: 0 !important;
+        background-color: var(--background-surface-high);
+    }
+    #app-mount #vc-spotify-progress-bar .barFill_a562c8 {
+        height: 22px !important;
+    }
+    #vc-spotify-progress-bar .vc-spotify-time-left,
+    #vc-spotify-progress-bar .vc-spotify-time-right {
+        z-index: 1;
+        top: 0;
+        margin-top: 0;
+        mix-blend-mode: difference;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: var(--font);
+    }
+    #vc-spotify-progress-bar .vc-spotify-time-left {
+        left: 6px;
+    }
+    #vc-spotify-progress-bar .vc-spotify-time-right {
+        right: 6px;
+    }
+    #vc-spotify-progress-bar .grabber_a562c8 {
+        visibility: hidden;
     }
 }
