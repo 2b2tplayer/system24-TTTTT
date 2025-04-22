@@ -1,5 +1,5 @@
 @property --unrounding {
-    syntax: 'on | off';
+    syntax: 'off | on';
     inherits: false;
     initial-value: on;
 }
@@ -71,6 +71,9 @@
         border: 2px solid var(--background-base-lower);
         top: -4px;
         right: -4px;
+    }
+    .wrapper__48112.isExpanded__48112 > .stack_dbd263 {
+        overflow: visible !important;
     }
 
     .slider__87bf1 > rect[rx='10'] {
